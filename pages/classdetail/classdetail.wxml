@@ -1,0 +1,51 @@
+<view class="classdetail">
+  <view class='clasdetail-cont'>
+    <view class='cdcont-title'>
+      {{title}}
+    </view>
+    <view class='cdcont-tr clearfix'>
+      <view class='contr-img'>
+        <image src='/image/classroom.png' class='allimg'></image>
+      </view>
+      <view class='contr-name'>
+        教室
+      </view>
+      <view class='contr-text'>
+        {{classroom}}
+      </view>
+    </view>
+    <view class='cdcont-tr clearfix'>
+      <view class='contr-imgb'>
+        <image src='/image/weeknum.png' class='allimg'></image>
+      </view>
+      <view class='contr-name'>
+        周数
+      </view>
+      <view class='contr-text'>
+        {{weeknum}}
+      </view>
+    </view>
+    <view class='cdcont-tr clearfix'>
+      <view class='contr-imgc'>
+        <image src='/image/timeload.png' class='allimg'></image>
+      </view>
+      <view class='contr-namea'>
+        节数
+      </view>
+      <view class='contr-text'>
+        {{timenum}}
+      </view>
+    </view>
+    <view class='cdcont-tr clearfix'>
+      <view class='contr-imga'>
+        <image src='/image/teacher.png' class='allimg'></image>
+      </view>
+      <view class='contr-namea'>
+        老师
+      </view>
+      <view class='contr-text'>
+        {{teacher}}
+      </view>
+    </view>
+  </view>
+</view>

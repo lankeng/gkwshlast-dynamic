@@ -1,0 +1,53 @@
+<view class="showbook">
+  <view class='showbook-num'>
+    书籍信息：48本
+  </view>
+  <block wx:for-items="{{list}}" wx:key="{{item.id}}" class="showbook-down">
+    <view class="kind-list-item">
+      <view id="{{item.id}}" class="kind-list-item-hd" bindtap="kindToggle">
+        <view class="kind-list-text">
+          <view class='title-left-img'>
+            <image src='/image/booklogo.png' class='allimg'></image>
+          </view>
+          <view class='title-right-text'>
+            <view class='title-text'>
+              UI交互动效必修课UI交互动效必修课UI交互动效必修课UI交互动效必修课
+            </view>
+            <view class='title-responsible'>
+              责任者:学姐
+            </view>
+          </view>
+        </view>
+        <view class="kind-list-grade">
+          <image src='/image/totop.png' class="allimg {{item.open ? 'kind-list-trans' : ''}}"></image>
+        </view>
+      </view>
+      <view class="kind-list-item-bd {{item.open ? 'kind-list-item-bd-show' : ''}}">
+        <view class="navigator-box {{item.open ? 'navigator-box-show' : ''}}">
+          <view class='row-bac'>
+            <view class='gtabcon-row'>
+              <view class='gtabrow-thing'>
+                <text class='gtabrow-pubtitle'>出版社</text>
+                <text class='gtabrow-name'>清华大学出版社</text>
+              </view>
+              <view class='gtabrow-thing'>
+                <text class='gtabrow-pubtitle'>索书号</text>
+                <text class='gtabrow-name'>TP311.1/306</text>
+              </view>
+              <view class='gtab-rowcheck'>
+                <view class='gtabrow-detil'>详情</view>
+                <view class='gtabrow-logo'>
+                  <image src='/image/booklogo.png' class='allimg'></image>
+                </view>
+                <view class='gtarow-check' bindtap='tobookdetail'>点击查看</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='showbook-inteval'>
+
+    </view>
+  </block>
+</view>

@@ -1,0 +1,31 @@
+<view class='paymoney'>
+  <view class='paymoney-title'>学生信息</view>
+  <view class='paymoney-stucon'>
+    <view class='stucon-tr clearfix'>
+      <view class='stucontr-left'>姓名</view>
+      <view class='stucontr-right'>张梓哲</view>
+    </view>
+    <view class='stucon-tr clearfix'>
+      <view class='stucontr-left'>学号</view>
+      <view class='stucontr-right'>2015130209</view>
+    </view>
+    <view class='stucon-tr clearfix'>
+      <view class='stucontr-left'>班级</view>
+      <view class='stucontr-right'>15级软件本科12班</view>
+    </view>
+  </view>
+  <view class='paymoney-paycon'>
+    <view class='paymoney-title'>缴费内容</view>
+    <view class='paycon-text'>关于XXXXXXX的缴费。</view>
+  </view>
+  <view class='paymoney-paycon'>
+    <view class='paymoney-title'>缴费信息</view>
+    <view class='paycon-allnum clearfix'>
+      <view class='allnum-text'>总金额</view>
+      <view class='allnum-num'>20元</view>
+    </view>
+  </view>
+  <button class='paymoney-btn' bindtap='topaysuccess'>
+  确认支付
+  </button>
+</view>

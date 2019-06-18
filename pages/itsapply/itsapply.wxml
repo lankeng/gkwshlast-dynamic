@@ -1,0 +1,82 @@
+<view class='proapply'>
+  <view class='proapply-all'>
+    <view class='proapply-con'>
+      <view class='aply-title'>
+        损坏物件：
+      </view>
+      <view class="autonym-middle" catchtap="chooseImageTap">
+        <view wx:if="{{isAutonym}}" class="autonym-middle-line">
+          <image class="middle-lineimg" src="/image/camera.png"></image>
+          <view class='middle-text'>添加照片</view>
+        </view>
+        <view wx:else class="middle-original">
+          <image class="middle-original-img" src="{{item1}}" data-index="{{index}}" catchtap="chooseImageTap"></image>
+        </view>
+      </view>
+    </view>
+    <view class='proapply-con'>
+      <view class='aply-title'>
+        <text class='aply-title-text'>*</text>情况描述：
+      </view>
+      <textarea class='aply-textarea' maxlength="200" bindinput='descriptionipt'></textarea>
+    </view>
+    <view class='proapply-con'>
+      <view class='aply-title'>
+        申请维修时间：
+      </view>
+      <view class='aply-aptime'>
+        {{nowtime}}
+      </view>
+    </view>
+    <view class='proapply-con'>
+      <view class='aply-title'>
+        <text class='aply-title-text'>*</text>要求维修时间：
+      </view>
+      <view class="aply-seltime">
+        <picker mode="multiSelector" value="{{dateTime1}}" bindchange="changeDateTime1" bindcolumnchange="changeDateTimeColumn1" range="{{dateTimeArray1}}">
+          <view class="tui-picker-detail">
+            {{dateTimeArray1[0][dateTime1[0]]}}-{{dateTimeArray1[1][dateTime1[1]]}}-{{dateTimeArray1[2][dateTime1[2]]}} {{dateTimeArray1[3][dateTime1[3]]}}:{{dateTimeArray1[4][dateTime1[4]]}}
+          </view>
+          <view class='picker-img'>
+            <image src='/image/down.png' class='allimg'></image>
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class='proapply-con'>
+      <view class='aply-title'>
+        <text class='aply-title-text'>*</text>区苑：
+      </view>
+      <view class="aply-seltime">
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+          <view class="tui-picker-detail">
+            {{array[index]}}
+          </view>
+          <view class='picker-img'>
+            <image src='/image/down.png' class='allimg'></image>
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class='proapply-con'>
+      <view class='aply-title'>
+        <text class='aply-title-text'>*</text>宿舍编号：
+      </view>
+      <input type="text" class='aply-ipt' bindinput='toroom' placeholder='格式：1-814（代表1栋814）'></input>
+    </view>
+    <view class='proapply-con'>
+      <view class='aply-title'>
+        <text class='aply-title-text'>*</text>申请人：
+      </view>
+      <input type="text" class='aply-ipt' bindinput='applicationipt'></input>
+    </view>
+    <view class='proapply-con'>
+      <view class='aply-title'>
+        <text class='aply-title-text'>*</text>联系电话：
+      </view>
+      <input type="text" class='aply-ipt' bindinput='telnumipt'></input>
+    </view>
+    <!-- <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">123</button> -->
+    <button class='proapply-btn' bindtap='toapply'>提交申请</button>
+  </view>
+</view>

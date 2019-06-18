@@ -1,0 +1,69 @@
+<view class='grade' wx:if="{{showdata == true}}">
+  <view class='grade-year'>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <view class="sel-picker">
+          {{array[index]}}
+        </view>
+        <view class='sel-down'></view>
+      </picker>
+  </view>
+  <view class='grade-tab'>
+    <view class='gtab-title'>
+      <view class='gbtitle-left'>
+        <text class='gtitle-text'>课程名称</text>
+      </view>
+      <view class='gbtitle-right'>
+        成绩
+      </view>
+    </view>
+    <view class='gtab-con'>
+      <block wx:for-items="{{list}}" wx:key="item" wx:for-index="index">
+        <view class="kind-list-item">
+          <view id="{{item.KCMC}}" class="kind-list-item-hd" bindtap="kindToggle">
+            <view class="kind-list-text">
+              <view class="kind-list-text-img {{item.open ? 'kind-list-text-img-down' : ''}}">
+              </view>
+              {{item.KCMC}}</view>
+            <view class="kind-list-grade">{{item.CJ}}</view>
+          </view>
+          <view class="kind-list-item-bd {{item.open ? 'kind-list-item-bd-show' : ''}}">
+            <view class="navigator-box {{item.open ? 'navigator-box-show' : ''}}">
+              <view class='row-bac'>
+                <view class='gtabcon-row'>
+                  <view>
+                    课程名称：{{item.KCMC}}
+                  </view>
+                  <view>
+                    学分：{{item.XF}}
+                  </view>
+                  <view>
+                    平时成绩：{{item.PSCJ}}
+                  </view>
+                  <view>
+                    期末成绩：{{item.QMCJ}}
+                  </view>
+                  <view>
+                    总成绩：{{item.CJ}}
+                  </view>
+                  <view>
+                    补考成绩：{{item.BKCJ}}
+                  </view>
+                  <view>
+                    重修成绩：{{item.CXCJ}}
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>
+<view class='nologin' wx:else>
+  <view class='nologin-img'>
+    <image src='/image/tologin.png' class='allimg'></image>
+  </view>
+  <view class='nologin-text'>Ooops！您需要登陆哦( T﹏T )</view>
+  <view class='nologin-tologin' bindtap='notologin'>登陆</view>
+</view>

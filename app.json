@@ -1,0 +1,75 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/schedule/schedule",
+    "pages/my/my",
+    "pages/property/property",
+    "pages/prodetail/prodetail",
+    "pages/proapply/proapply",
+    "pages/test/test",
+    "pages/itservice/itservice",
+    "pages/itsapply/itsapply",
+    "pages/itdetail/itdetail",
+    "pages/grade/grade",
+    "pages/emptyroom/emptyroom",
+    "pages/findbook/findbook",
+    "pages/showbook/showbook",
+    "pages/bookdetail/bookdetail",
+    "pages/courier/courier",
+    "pages/lists/lists",
+    "pages/details/details",
+    "pages/company/company",
+    "pages/elewater/elewater",
+    "pages/payrecord/payrecord",
+    "pages/loginban/loginban",
+    "pages/comments/comments",
+    "pages/borrowban/borrowban",
+    "pages/borrowinfo/borrowinfo",
+    "pages/classdetail/classdetail",
+    "pages/roomban/roomban",
+    "pages/watercheck/watercheck",
+    "pages/paymoney/paymoney",
+    "pages/paysuccess/paysuccess",
+    "pages/costrecord/costrecord",
+    "pages/paydetail/paydetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#004CA0",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#acadb1",
+    "selectedColor": "#004da0",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "selectedIconPath": "image/indexy.png",
+        "iconPath": "image/index.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "image/emptyromy.png",
+        "iconPath": "image/emptyrom.png",
+        "pagePath": "pages/emptyroom/emptyroom",
+        "text": "空教室"
+      },
+      {
+        "selectedIconPath": "image/myy.png",
+        "iconPath": "image/my.png",
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "sitemapLocation": "sitemap.json"
+}

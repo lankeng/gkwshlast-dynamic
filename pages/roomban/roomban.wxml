@@ -1,0 +1,101 @@
+<!-- <view class='roomban' wx:if="{{login == true}}">
+  <view class='roomban-logo'>
+    <image src='/image/roomlogo.png' class='allimg'></image>
+  </view>
+  <view class='roomban-content'>
+    <view class='roomcon-item clearfix'>
+      <view class='conitem-title'>
+        学号：
+      </view>
+      <view class='conitem-ans'>
+        {{xh}}
+      </view>
+    </view>
+    <view class='roomcon-item clearfix'>
+      <view class='conitem-title'>
+        姓名：
+      </view>
+      <view class='conitem-ans'>
+        {{xm}}
+      </view>
+    </view>
+    <view class='roomcon-item clearfix'>
+      <view class='conitem-title'>
+        区苑：
+      </view>
+      <view class='conitem-ansa'>
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+          <view class="tui-picker-detail">
+            {{array[index]}}
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class='roomcon-item clearfix'>
+      <view class='conitem-title'>
+        宿舍楼号：
+      </view>
+      <input class='conitem-ansa' type='text'  value="{{floor}}" placeholder='1-814（代表1栋814）' placeholder-class='conitem-place' bindinput='floorshow'/>
+    </view>
+    <view class='borrowban-btn'>
+      <button class="borbtn-self {{bantext=='已绑定(换绑)'?'alrelogin':''}}" bindtap='toroomban'>{{bantext}}</button>
+    </view>
+  </view>
+</view>
+<view class='nologin' wx:else>
+  <view class='nologin-img'>
+    <image src='/image/tologin.png' class='allimg'></image>
+  </view>
+  <view class='nologin-text'>Ooops！您需要登陆哦( T﹏T )</view>
+  <view class='nologin-tologin' bindtap='notologin'>登陆</view>
+</view> -->
+<view class='roomban' wx:if="{{login == true}}">
+  <view class='roomban-logo'>
+    <image src='/image/roomlogo.png' class='allimg'></image>
+  </view>
+  <view class='roomban-tr clearfix'>
+    <view class='bantr-title'>
+      姓名：
+    </view>
+    <view class='bantr-text'>
+      {{xm}}
+    </view>
+  </view>
+  <view class='roomban-tr clearfix'>
+    <view class='bantr-title'>
+      学号：
+    </view>
+    <view class='bantr-text'>
+      {{xh}}
+    </view>
+  </view>
+  <view class='roomban-tra clearfix'>
+    <view class='bantr-title'>
+      区苑：
+    </view>
+    <view class='bantr-text'>
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <view class="sel-picker">
+          {{array[index]}}
+        </view>
+        <view class='sel-down'></view>
+      </picker>
+    </view>
+  </view>
+  <view class='roomban-tra clearfix'>
+    <view class='bantr-title'>
+      宿舍：
+    </view>
+    <input class='bantr-ipt' type='text' value="{{floor}}" placeholder='如1-814,代表1栋814' placeholder-class='conitem-place' bindinput='floorshow' />
+  </view>
+  <view class='borrowban-btn'>
+      <button class="borbtn-self {{bantext=='已绑定（换绑）'?'alrelogin':''}}" bindtap='toroomban'>{{bantext}}</button>
+  </view>
+</view>
+<view class='nologin' wx:else>
+  <view class='nologin-img'>
+    <image src='/image/tologin.png' class='allimg'></image>
+  </view>
+  <view class='nologin-text'>Ooops！您需要登陆哦( T﹏T )</view>
+  <view class='nologin-tologin' bindtap='notologin'>登陆</view>
+</view>

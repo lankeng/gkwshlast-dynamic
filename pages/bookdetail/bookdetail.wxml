@@ -1,0 +1,70 @@
+<view class='bookdetail'>
+  <view class='bookdetail-con'>
+    <view class='bookdetail-title'>
+      UI交互动效必修课
+    </view>
+    <view class='bookdetai-detail'>
+      出版：北京：清华大学出版社,2018,06
+    </view>
+    <view class='bookdetai-detail'>
+      出版：北京：清华大学出版社,2018,06出版：北京：清华大学出版社,2018,06出版：北京：清华大学出版社,2018,06出版：北京：清华大学出版社,2018,06出版：北京：清华大学出版社,2018,06出版：北京：清华大学出版社,2018,06出版：北京：清华大学出版社,2018,06出版：北京：清华大学出版社,2018,06
+    </view>
+    <view class='bookdetai-detail'>
+      载体形态：北京：清华大学出版社,2018,06
+    </view>
+    <view class='bookdetai-detail'>
+      载体形态：北京：清
+    </view>
+    <view class='bookdetai-detail'>
+      载体形态：TP311.1
+    </view>
+    <block wx:for-items="{{list}}" wx:key="{{item.id}}" class="showbook-down">
+      <view class="kind-list-item">
+        <view id="{{item.id}}" class="kind-list-item-hd" bindtap="kindToggle">
+          <view class="kind-list-text">
+            <view class='title-right-text'>
+              <view class="title-text {{item.open ? 'title-text-open' : ''}}">
+                《UI交互动效必修课》（本馆借出）
+              </view>
+            </view>
+          </view>
+          <view class="kind-list-grade">
+            <image src='/image/totop.png' class="allimg {{item.open ? 'kind-list-trans' : ''}}"></image>
+          </view>
+        </view>
+        <view class="kind-list-item-bd {{item.open ? 'kind-list-item-bd-show' : ''}}">
+          <view class="navigator-box {{item.open ? 'navigator-box-show' : ''}}">
+            <view class='row-bac'>
+              <view class='gtabcon-row'>
+                <view class='gtabrow-thing'>
+                  <view class='gtabrow-pubtitle'>索书号</view>
+                  <view class='gtabrow-name'>清华大学出版社</view>
+                </view>
+                <view class='gtabrow-thing'>
+                  <view class='gtabrow-pubtitle'>条号码</view>
+                  <view class='gtabrow-name'>TP311.1/306</view>
+                </view>
+                <view class='gtabrow-thing'>
+                  <view class='gtabrow-pubtitle'>登录号</view>
+                  <view class='gtabrow-name'>TP311.1/306</view>
+                </view>
+                <view class='gtabrow-thing'>
+                  <view class='gtabrow-pubtitle'>藏书部门</view>
+                  <view class='gtabrow-name'>TP311.1/306</view>
+                </view>
+                <view class='gtabrow-thing'>
+                  <view class='gtabrow-pubtitle'>流通状态</view>
+                  <view class='gtabrow-name'>TP311.1/306</view>
+                </view>
+                <view class='gtabrow-thing'>
+                  <view class='gtabrow-pubtitle'>应还日期</view>
+                  <view class='gtabrow-name'>TP311.1/306</view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

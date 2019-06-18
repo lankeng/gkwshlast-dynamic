@@ -1,0 +1,52 @@
+<view class='borrowban'>
+  <view class='borrowban-logo'>
+    <image src='/image/wbooklogo.png' class='allimg'></image>
+  </view>
+  <view class='borrowban-ipt'>
+    <view class='boript-left'>
+      图书证卡号
+    </view>
+    <view class='boript-mid'>|</view>
+    <input type='text' class='boript-right' placeholder='请输入你的图书证卡号' placeholder-class='boript-place' data-name='username' bindinput='onchange'></input>
+  </view>
+  <view class='borrowban-ipta'>
+    <view class='boript-left'>
+      图书证密码
+    </view>
+    <view class='boript-mid'>|</view>
+    <input type='password' class='boript-right' placeholder='请输入你的图书证密码' data-name='password' bindinput='onchange' placeholder-class='boript-place'></input>
+  </view>
+  <view class='borrowban-help' bindtap='clickhelpshow'>
+    <view class='borhelp-text'>帮助</view>
+    <view class='borhelp-img'>
+      <image src='/image/what.png' class='allimg'></image>
+    </view>
+  </view>
+  <view class='borrowban-btn'>
+    <button class='borbtn-self' bindtap='tologinban'>确认绑定</button>
+  </view>
+</view>
+<view class="zzhao{{zzshow?'a':''}}" animation="{{alphaData}}">
+  <view class='help'>
+    <view class='help-title'>
+      <view class='htitle-text'>帮助</view>
+      <view class='htitle-image' bindtap='clickhelphide'>
+        <image src='/image/close.png' class='allimg'></image>
+      </view>
+    </view>
+    <view class='help-con'>
+      <view class='helpcon-title'>
+        1、图书证的卡号和密码是什么？
+      </view>
+      <view class='helpcon-content'>
+        卡号：一般写在图书证的背面
+      </view>
+      <view class='helpcon-content'>
+        密码：初始密码卡号后六位
+      </view>
+      <view class='helpcon-content'>
+        忘记卡号或者密码请咨询图书管理员
+      </view>
+    </view>
+  </view>
+</view>

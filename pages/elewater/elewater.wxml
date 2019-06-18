@@ -1,0 +1,47 @@
+<view class='elewater'>
+  <view class='eletwater-allpay'>
+    <view class='allpay-professional'>
+      <view class='profess-name'>专业名称：</view>
+      <view class='proname-text'>软件工程</view>
+    </view>
+    <view class='allpay-professional'>
+      <view class='profess-name'>学号：</view>
+      <view class='proname-text'>1540225113</view>
+    </view>
+    <view class='allpay-professional'>
+      <view class='profess-name'>姓名：</view>
+      <view class='proname-text'>蓝铿</view>
+    </view>
+    <view class='allpay-professional'>
+      <view class='profess-name'>宿舍编号：</view>
+      <view class='proname-text'>R822</view>
+    </view>
+    <view class='allpay-professional'>
+      <view class='profess-name'>应实交总金额：</view>
+      <view class='proname-pay'>￥50.00</view>
+    </view>
+  </view>
+  <view class='eletwater-table'>
+    <view class='eletable-th'>
+      <view class='tableth-titleleft'>日期时间段</view>
+      <view class='tableth-titleright'>应交金额</view>
+    </view>
+    <view class='eletable-row'>
+      <view class='tableth-titleleft'>2018.11-2018.12</view>
+      <view class='tableth-titleright'>￥30.00</view>
+    </view>
+    <view class='eletable-row'>
+      <view class='tableth-titleleft'>2019.1-2019.2</view>
+      <view class='tableth-titleright'>￥20.00</view>
+    </view>
+  </view>
+  <button class='eletable-btn' bindtap='topayrecord'>历史缴费记录</button>
+</view>
+<view class='pay-con'>
+  <view class='paycon-num'>
+    ￥50.00
+  </view>
+  <view class='topay'>
+    缴费支付
+  </view>
+</view>

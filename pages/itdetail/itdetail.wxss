@@ -1,0 +1,43 @@
+.prodetail {
+  width: 100%;
+}
+
+.pd-con {
+  width: 90%;
+  margin: auto;
+  clear: both;
+  padding-top: 30rpx;
+}
+
+.pdcon-title {
+  font-size: 28rpx;
+  color: #000;
+  float: left;
+  font-weight: bold;
+}
+
+.pdcon-text {
+  float: left;
+  font-size: 28rpx;
+  color: #666;
+}
+
+.padcon-badpic {
+  width: 100%;
+  height: 396rpx;
+  border-radius: 8rpx;
+  margin-top: 15rpx;
+}
+
+.pdcon-titlea {
+  font-size: 28rpx;
+  color: #000;
+  font-weight: bold;
+}
+
+.pd-cona {
+  width: 90%;
+  margin: auto;
+  clear: both;
+  height: 200rpx;
+}

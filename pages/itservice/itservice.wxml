@@ -1,0 +1,39 @@
+<view class='property' wx:if="{{login == true}}">
+  <view class='pro-btn'>
+    <view class='probtn-con' bindtap='toapply' data-type="2">
+      报修申请
+    </view>
+  </view>
+  <view class='pro-tab'>
+    <view class='protab-title'>
+      <view class='protle-instructions'>
+        情况描述
+      </view>
+      <view class='protle-state'>
+        状态
+      </view>
+      <view class='protle-operation'>
+        操作
+      </view>
+    </view>
+    <view class='protab-row' wx:for="{{datashow}}" wx:key="item">
+      <view class='row-instructions'>
+        {{item.situation}}
+      </view>
+      <view class='row-state'>
+        {{item.serviceStatus}}
+      </view>
+      <view class='row-operation'>
+        <view bindtap='goprodetail' data-alldata='{{item}}'>查看</view>
+        <view wx:if="{{item.serviceStatus=='已维修'}}" class='operation-comments' bindtap='gocomments' data-sid='{{item.sid}}' data-situation='{{item.situation}}' data-servicestatus='{{item.serviceStatus}}' data-requireservicetime='{{item.requireServiceTime}}'>评价</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='nologin' wx:else>
+  <view class='nologin-img'>
+    <image src='/image/tologin.png' class='allimg'></image>
+  </view>
+  <view class='nologin-text'>Ooops！您需要登陆哦( T﹏T )</view>
+  <view class='nologin-tologin' bindtap='notologin'>登陆</view>
+</view>

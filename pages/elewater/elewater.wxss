@@ -1,0 +1,112 @@
+.elewater {
+  width: 100%;
+  padding-top: 30rpx;
+}
+
+.eletwater-allpay {
+  width: 90%;
+  margin: auto;
+}
+
+.allpay-professional {
+  font-size: 30rpx;
+  display: table;
+  width: 100%;
+  padding-top: 20rpx;
+}
+
+.profess-name {
+  font-weight: bold;
+  display: table-cell;
+  width: 33%;
+  vertical-align: top;
+  text-align: left;
+}
+
+.proname-text {
+  width: 67%;
+  display: table-cell;
+}
+
+.proname-pay {
+  width: 67%;
+  display: table-cell;
+  color: red;
+}
+
+.eletwater-table {
+  width: 90%;
+  margin: auto;
+  border-left: 1rpx solid;
+  border-right: 1rpx solid;
+  border-bottom: 1rpx solid;
+  font-size: 30rpx;
+  text-align: center;
+  margin-top: 50rpx;
+}
+
+.eletable-th {
+  width: 100%;
+  display: table;
+  font-weight: bold;
+}
+
+.eletable-row {
+  width: 100%;
+  display: table;
+}
+
+.tableth-titleleft {
+  display: table-cell;
+  width: 50%;
+  border-right: 1rpx solid;
+  border-top: 1rpx solid;
+  padding: 10rpx 0;
+}
+
+.tableth-titleright {
+  display: table-cell;
+  width: 50%;
+  border-top: 1rpx solid;
+  padding: 10rpx 0;
+}
+
+.eletable-btn {
+  width: 32%;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  border-radius: 0rpx;
+  margin-top: 30rpx;
+}
+
+.pay-con {
+  width: 100%;
+  height: 100rpx;
+  position: fixed;
+  bottom: 0;
+  border-top: 1rpx solid #b2b2b2;
+  display: block;
+}
+
+.paycon-num {
+  width: 60%;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 40rpx;
+  color: #fda624;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+}
+
+.topay {
+  width: 40%;
+  height: 100rpx;
+  line-height: 100rpx;
+  background-color: #fc0f0b;
+  color: #fff;
+  font-size: 40rpx;
+  display: inline-block;
+  text-align: center;
+}

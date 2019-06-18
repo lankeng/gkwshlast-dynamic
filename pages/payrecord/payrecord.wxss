@@ -1,0 +1,33 @@
+.paycord {
+  width: 100%;
+  padding-top: 80rpx;
+}
+
+.paycord-table {
+  width: 90%;
+  margin: auto;
+  font-size: 30rpx;
+  border-left: 1rpx solid;
+  border-bottom: 1rpx solid;
+}
+
+.paytab-th {
+  display: table;
+  width: 100%;
+  font-weight: bold;
+}
+
+.paytab-tr {
+  display: table;
+  width: 100%;
+}
+
+.tabth-td {
+  display: table-cell;
+  width: 33.3%;
+  text-align: center;
+  border-right: 1rpx solid;
+  border-top: 1rpx solid;
+  padding: 10rpx 0rpx;
+  vertical-align: middle;
+}

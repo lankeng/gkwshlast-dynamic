@@ -1,0 +1,29 @@
+<form bindsubmit="submitForm" report-submit>
+  <view class="login-block">
+    <view class="login-animate {{tap?tap+'-animate':''}}">
+      <view class="left-ear" style="{{styles.left_ear}}"></view>
+      <view class="right-ear" style="{{styles.right_ear}}"></view>
+      <view class="head">
+        <view class="left-eye {{doe?'doe':''}}" style="{{styles.left_eye}}"></view>
+        <view class="right-eye {{doe?'doe':''}}" style="{{styles.right_eye}}"></view>
+        <view class="face" style="{{styles.face}}">
+          <view class="nose" style="{{styles.nose}}"></view>
+          <view class="mouth {{doe?'doe':''}} {{showPwd?'show':''}}" style="{{styles.mouth}}"></view>
+        </view>
+      </view>
+      <view class="body"></view>
+      <view class="left-arm {{showPwd?'show':''}}"></view>
+      <view class="right-arm {{showPwd?'show':''}}"></view>
+    </view>
+    <view class="login-form">
+      <view class="username">
+        <input type="text" name="username" data-name="username" bindinput="onChange" bindtap="onTap" placeholder='请输入学号' value='{{usename}}'></input>
+      </view>
+      <view class="password">
+        <input type="{{showPwd?'text':'password'}}" name="password" data-name="password" bindinput="onChange" bindtap="onTap" placeholder='请输入密码' value='{{usepwd}}'></input>
+        <view class="pwd-eye pwd-eye-{{showPwd?'hide':'show'}}" data-flag="hide" wx:if="{{pwd_eye}}" catchtap="clickPwdEye"></view>
+      </view>
+    </view>
+  </view>
+</form>
+<button class="loginban {{btntext=='已绑定(解除绑定)'?'alrelogin':''}}" bindtap='tologinban'>{{btntext}}</button>

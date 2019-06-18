@@ -1,0 +1,65 @@
+<view class='prodetail'>
+  <view class='pd-con'>
+    <view class='pdcon-title'>
+      情况描述：
+    </view>
+    <view class='pdcon-text'>
+      {{situation}}
+    </view>
+  </view>
+  <view class='pd-con'>
+    <view class='pdcon-title'>
+      状态：
+    </view>
+    <view class='pdcon-text'>
+      {{servicestatus}}
+    </view>
+  </view>
+  <view class='pd-con'>
+    <view class='pdcon-title'>
+      要求维修时间：
+    </view>
+    <view class='pdcon-text'>
+      {{requireservicetime}}
+    </view>
+  </view>
+  <view class='pd-con'>
+    <view class='aply-title'>
+      <text class='aply-title-text'>*</text>服务态度：
+    </view>
+    <view class="aply-seltime">
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <view class="picker" class="tui-picker-detail">
+          {{array[index]}}
+        </view>
+        <view class='picker-img'>
+          <image src='/image/down.png' class='allimg'></image>
+        </view>
+      </picker>
+    </view>
+  </view>
+  <view class='pd-con'>
+    <view class='aply-title'>
+      <text class='aply-title-text'>*</text>服务质量：
+    </view>
+    <view class="aply-seltime">
+      <picker bindchange="bindPickerChangea" value="{{indexa}}" range="{{arraya}}">
+        <view class="picker" class="tui-picker-detail">
+          {{arraya[indexa]}}
+        </view>
+        <view class='picker-img'>
+          <image src='/image/down.png' class='allimg'></image>
+        </view>
+      </picker>
+    </view>
+  </view>
+  <view class='pd-con'>
+    <view class='aply-title'>
+      意见或建议(评语)：
+    </view>
+    <textarea class='aply-textarea' maxlength="200" bindinput='commentsipt'></textarea>
+  </view>
+  <view class='pd-con'>
+    <button class='proapply-btn' bindtap='succomments'>提交</button>
+  </view>
+</view>

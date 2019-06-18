@@ -1,0 +1,199 @@
+.schedule {
+  width: 100%;
+  padding-bottom: 50rpx;
+}
+
+.schedule-week {
+  width: 100%;
+  height: 80rpx;
+  background-color: #f1f1f1;
+  font-size: 25rpx;
+  display: table;
+  padding: 10rpx 0;
+}
+
+.sweek-tab {
+  width: 16.66%;
+  height: 100%;
+  display: table-cell;
+  text-align: center;
+}
+
+.swtab-text {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.schedule-row {
+  width: 100%;
+  height: 200rpx;
+  display: table;
+}
+
+.scrow-tab {
+  display: table-cell;
+  width: 16.66%;
+  text-align: center;
+  height: 150rpx;
+  border-radius: 20rpx;
+  font-size: 25rpx;
+  color: #fff;
+  border: 1rpx solid #fff;
+  /* padding-bottom: 45rpx;
+  padding-top: 10rpx; */
+}
+
+.scrow-tabno {
+  background: none !important;
+}
+
+.sctab-time {
+  width: 100%;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+
+.scrow-tab:first-child {
+  background-color: #f1f1f1 !important;
+  color: #000 !important;
+}
+
+.sctab-course {
+  width: 122rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.sctab-name {
+  height: 35rpx;
+  line-height: 35rpx;
+  width: 122rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.schedule-row:nth-child(2) .scrow-tab {
+  background-color: #82e86b;
+}
+
+.schedule-row:nth-child(3) .scrow-tab {
+  background-color: #f9c25d;
+}
+
+.schedule-row:nth-child(4) .scrow-tab {
+  background-color: #fb9ed9;
+}
+
+.schedule-row:nth-child(5) .scrow-tab {
+  background-color: #8baffd;
+}
+
+.schedule-row:nth-child(6) .scrow-tab {
+  background-color: #79f0a5;
+}
+
+.sel-text {
+  font-size: 30rpx;
+  float: left;
+}
+
+.sel-week {
+  width: 100%;
+  height: 50rpx;
+  line-height: 50rpx;
+  float: left;
+  border-radius: 6rpx;
+  text-align: center;
+}
+
+.sel-weeka {
+  width: 100%;
+  height: 50rpx;
+  line-height: 50rpx;
+  background-color: #fafafa;
+  border-radius: 6rpx;
+  text-align: center;
+  border-bottom: #666;
+}
+
+.sel-down {
+  width: 0;
+  height: 0;
+  border-width: 12rpx 12rpx 0;
+  border-style: solid;
+  border-color: #333 transparent transparent; /*灰 透明 透明 */
+  position: relative;
+  display: inline-block;
+  top: -6rpx;
+  margin-left: 20rpx;
+}
+
+.sel-picker {
+  display: inline-block;
+  font-size: 30rpx;
+  position: relative;
+  top: -2rpx;
+  color: #333;
+}
+
+.schedule-sel {
+  width: 20%;
+  float: left;
+}
+
+.schedule-sela {
+  width: 100%;
+}
+
+.schedule-selb {
+  width: 340rpx;
+  margin: auto;
+  padding-bottom: 70rpx;
+}
+
+.schedule-btn {
+  /* width: 300rpx;
+  height: 80rpx;
+  margin: auto; */
+  clear: both;
+  /* line-height: 80rpx;
+  border: none;
+  background-color: #2f36dc;
+  font-size: 30rpx;
+  color: #fff;
+  text-align: center;
+  border-radius: 8rpx;
+  margin-top: 90rpx; */
+  position: relative;
+  font-size: 22rpx;
+  top: -30rpx;
+  float: right;
+  left: -15rpx;
+  border-bottom:1rpx solid #333333;
+
+}
+
+/* .schedule-bom{
+  margin-top: 20rpx;
+} */
+
+.swtab-nowday {
+  background-color: #1663B8;
+  color: #ffffff
+}
+
+.lefttoweek {
+  width: 50rpx;
+  height: 50rpx;
+  float: left;
+  margin-left: 255rpx;
+}
+
+.rigtoweek {
+  width: 50rpx;
+  height: 50rpx;
+  float: left;
+}

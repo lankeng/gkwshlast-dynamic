@@ -1,0 +1,60 @@
+<view class='emptyroom'>
+  <scroll-view class='ept-scroll' scroll-y="true" style='height:{{winheight}}rpx'>
+    <view class='ept-row' wx:for="{{showdata}}" wx:key="item">
+      <view class='ept-taba'>
+        <view class='taba-img'>
+          <image src='/image/room.png' class='allimg'></image>
+        </view>
+      </view>
+      <view class='ept-tabb'>
+        <view class='tabb-room' wx:for="{{item}}" wx:key="itema">{{item}}</view>
+      </view>
+    </view>
+  </scroll-view>
+  <view>
+    <view class='line-sel'>
+      <scroll-view class="categories" scroll-x="true">
+        <view class="category" wx:for="{{building}}" bindtap='click' data-id='{{index}}' wx:key="item">
+          <view class="category-sel {{index == id?'select':''}}">
+            <view class='casel-text'>
+              {{item}}
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+    <view class='line-sel'>
+      <scroll-view class="categories" scroll-x="true">
+        <view class="category" wx:for="{{cla}}" bindtap='clicka' data-id='{{index}}' wx:key="item">
+          <view class="category-sel {{index == ida?'selecta':''}}">
+            <view class='casel-text'>
+              {{item}}
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+    <view class='line-sel'>
+      <scroll-view class="categories" scroll-x="true">
+        <view class="category" wx:for="{{day}}" bindtap='clickb' data-id='{{index}}' wx:key="item">
+          <view class="category-sel {{index == idb?'selectb':''}}">
+            <view class='casel-text'>
+              {{item}}
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+    <view class='line-sel'>
+      <scroll-view class="categories" scroll-x="true">
+        <view class="category" wx:for="{{week}}" bindtap='clickc' data-id='{{index}}' wx:key="item">
+          <view class="category-sel {{index == idc?'selectc':''}}">
+            <view class='casel-text'>
+              {{item}}
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+</view>

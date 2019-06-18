@@ -1,0 +1,10 @@
+<swiper indicator-dots="true" class='swipercla'>
+  <block >
+    <swiper-item>
+      <view>123</view>
+    </swiper-item>
+    <swiper-item>
+     <view>456</view>
+    </swiper-item>
+  </block>
+</swiper>

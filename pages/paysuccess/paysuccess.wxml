@@ -1,0 +1,10 @@
+<view class='paysuccess'>
+  <view class='suc-image'>
+    <image src='/image/paysuccess.png' class='allimg'></image>
+  </view>
+  <navigator url='/pages/index/index' open-type='switchTab' hover-class="none">
+    <button class='suc-btn'>
+      返回首页
+    </button>
+  </navigator>
+</view>

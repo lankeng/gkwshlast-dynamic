@@ -1,0 +1,83 @@
+<view class='costrecord'>
+  <view class='cost-con' bindtap='topaydetail'>
+    <view class='costcon-all clearfix'>
+      <view class='conall-left'>
+        <view class='allleft-title'>学生证补办工本费</view>
+        <view class='allleft-text'>姓名：张梓哲</view>
+        <view class='allleft-text'>学号：2015130209</view>
+        <view class='allleft-text'>班级：15级软件本科12班</view>
+      </view>
+      <view class='conall-right'>
+        <view class='allright-img'>
+          <image src='/image/stuidcard.png' class='allimg'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='cost-con'>
+    <view class='costcon-all clearfix'>
+      <view class='conall-left'>
+        <view class='allleft-title'>素拓本工本费</view>
+        <view class='allleft-text'>姓名：张梓哲</view>
+        <view class='allleft-text'>学号：2015130209</view>
+        <view class='allleft-text'>班级：15级软件本科12班</view>
+      </view>
+      <view class='conall-right'>
+        <view class='allright-img'>
+          <image src='/image/calligraphy.png' class='allimg'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='cost-con'>
+    <view class='costcon-all clearfix'>
+      <view class='conall-left'>
+        <view class='allleft-title'>毕业证补办工本费</view>
+        <view class='allleft-text'>姓名：张梓哲</view>
+        <view class='allleft-text'>学号：2015130209</view>
+        <view class='allleft-text'>班级：15级软件本科12班</view>
+      </view>
+      <view class='conall-right'>
+        <view class='allright-img'>
+          <image src='/image/graduation.png' class='allimg'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='cost-con'>
+    <view class='costcon-all clearfix'>
+      <view class='conall-left'>
+        <view class='allleft-title'>入党积极分子培训费</view>
+        <view class='allleft-text'>姓名：张梓哲</view>
+        <view class='allleft-text'>学号：2015130209</view>
+        <view class='allleft-text'>班级：15级软件本科12班</view>
+      </view>
+      <view class='conall-right'>
+        <view class='allright-img'>
+          <image src='/image/activists.png' class='allimg'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='cost-con'>
+    <view class='costcon-all clearfix'>
+      <view class='conall-left'>
+        <view class='allleft-title'>党费</view>
+        <view class='allleft-text'>姓名：张梓哲</view>
+        <view class='allleft-text'>学号：2015130209</view>
+        <view class='allleft-text'>班级：15级软件本科12班</view>
+      </view>
+      <view class='conall-right'>
+        <view class='allright-img'>
+          <image src='/image/dues.png' class='allimg'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- <view class='norecord'>
+  <view class='norecord-img'>
+    <image src='/image/norecord.png' class='allimg'></image>
+  </view>
+  <view class='norecord-text'>抱歉，您的缴费记录为空！</view>
+</view> -->

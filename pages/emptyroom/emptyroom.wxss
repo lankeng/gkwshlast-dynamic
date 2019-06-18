@@ -1,0 +1,115 @@
+.emptyroom {
+  width: 100%;
+}
+
+.ept-row {
+  width: 90%;
+  margin: auto;
+  display: table;
+  margin-top: 10rpx;
+}
+
+.ept-taba {
+  width: 20%;
+  display: table-cell;
+  vertical-align: top;
+}
+
+.ept-tabb {
+  width: 80%;
+  display: table-cell;
+  vertical-align: top;
+}
+
+.taba-img {
+  width: 36rpx;
+  height: 38rpx;
+  margin: auto;
+}
+
+.tabb-room {
+  width: 20%;
+  float: left;
+  text-align: center;
+  font-size: 30rpx;
+  color: #666;
+  padding-bottom: 20rpx;
+}
+
+.categories {
+  height: 120rpx;
+  line-height: 120rpx;
+  white-space: nowrap;
+  display: flex;
+  background-color: #f1f1f1;
+}
+
+.line-sel:nth-child(2) .categories {
+  background-color: #fafaf8 !important;
+}
+
+.line-sel:last-child .categories {
+  background-color: #fafaf8 !important;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.categories .category {
+  width: 160rpx;
+  height: 120rpx;
+  text-align: center;
+  display: inline-block;
+  font-size: 26rpx;
+  color: #7d7d7d;
+}
+
+.categories .category:last-child {
+  border: 0;
+}
+
+.ept-scroll {
+  width: 100%;
+}
+
+.category-sel {
+  width: 105rpx;
+  height: 105rpx;
+  background: none;
+  border-radius: 50%;
+  margin: auto;
+  position: relative;
+  top: 2px
+}
+
+.select {
+  background: #f7ca69;
+  color: #fff;
+  font-weight: bold;
+}
+
+.selecta {
+  background: #88cfa7;
+  color: #fff;
+  font-weight: bold;
+}
+
+.selectb {
+  background: #7cb4ef;
+  color: #fff;
+  font-weight: bold;
+}
+
+.selectc {
+  background: #a08ceb;
+  color: #fff;
+  font-weight: bold;
+}
+
+.casel-text {
+  position: relative;
+  top: -5rpx;
+}

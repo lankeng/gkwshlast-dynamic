@@ -1,0 +1,189 @@
+/* .slide-image {
+  width: 100%;
+  height: 100%;
+}
+
+.index-swiper {
+  height: 400rpx;
+}
+
+.index-tab {
+  width: 100%;
+}
+
+.intab-row {
+  width: 90%;
+  margin: auto;
+}
+
+.rowcon-img {
+  width: 120rpx;
+  height: 114rpx;
+  margin: auto;
+}
+
+.rowcon-imga {
+  width: 115rpx;
+  height: 115rpx;
+  margin: auto;
+}
+
+.rowcon-imgb {
+  width: 95rpx;
+  height: 95rpx;
+  margin: auto;
+  position: relative;
+  top: 15rpx;
+}
+
+.rowcon-imgc {
+  width: 93rpx;
+  height: 93rpx;
+  margin: auto;
+}
+
+.rowcon-imgd {
+  width: 110rpx;
+  height: 110rpx;
+  margin: auto;
+  position: relative;
+  top: 15rpx;
+}
+
+.rowcon-text {
+  font-size: 30rpx;
+  width: 100%;
+  height: 35rpx;
+  line-height: 35rpx;
+}
+
+.tabrow-con {
+  width: 33.3%;
+  text-align: center;
+  float: left;
+  height: 165rpx;
+  margin-top: 30rpx;
+}
+
+.tabrow-top {
+  width: 100%;
+  height: 130rpx;
+} */
+
+page {
+  background-color: #f2f2f2;
+}
+
+.gkindex {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow-x: hidden;
+}
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.index-swiper {
+  height: 284rpx;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+}
+
+.index-swiper .wx-swiper-dot {
+  width: 10rpx;
+  height: 10rpx;
+}
+
+.gkindex-student {
+  width: 100%;
+  background-color: #fff;
+  padding-bottom: 43rpx;
+}
+
+.gkstu-title {
+  width: 100%;
+  padding-top: 43rpx;
+  padding-left: 30rpx;
+}
+
+.gktitl-radius {
+  width: 16rpx;
+  height: 16rpx;
+  border-radius: 50%;
+  background-color: #0f75d1;
+  float: left;
+  position: relative;
+  top: 16rpx;
+}
+
+.gktitl-text {
+  color: #4d4d4d;
+  font-size: 36rpx;
+  float: left;
+  margin-left: 28rpx;
+}
+
+.gkstu-con {
+  width: 100%;
+  padding: 0 40rpx;
+  margin-top: 49rpx;
+}
+
+.stucon-icontext {
+  width: 150rpx;
+  text-align: center;
+  float: left;
+  margin-left: 20rpx;
+}
+
+.stucon-icontext:first-child {
+  margin-left: 0rpx;
+}
+
+.incontext-icon {
+  width: 130rpx;
+  height: 130rpx;
+  margin: auto;
+}
+
+.icontext-text {
+  width: 100%;
+  font-size: 28rpx;
+  color: #636363;
+  margin-top: 22rpx;
+}
+
+.stucon-tr {
+  width: 100%;
+}
+
+.stucon-tra {
+  width: 100%;
+  margin-top: 60rpx;
+}
+
+.gkindex-live {
+  width: 100%;
+  background-color: #fff;
+  padding-bottom: 43rpx;
+  margin-top: 30rpx
+}
+
+.gkindex-live:last-child{
+  margin-bottom: 61rpx
+}

@@ -1,0 +1,24 @@
+<view class="paycord">
+  <view class='paycord-table'>
+    <view class='paytab-th'>
+      <view class='tabth-td'>缴费日期</view>
+      <view class='tabth-td'>日期时间段</view>
+      <view class='tabth-td'>已缴总金额</view>
+    </view>
+    <view class='paytab-tr'>
+      <view class='tabth-td'>2019.3.18</view>
+      <view class='tabth-td'>2018.11-2018.12</view>
+      <view class='tabth-td'>￥30.00</view>
+    </view>
+    <view class='paytab-tr'>
+      <view class='tabth-td'>2019.3.18</view>
+      <view class='tabth-td'>2018.11-2018.12</view>
+      <view class='tabth-td'>￥30.00</view>
+    </view>
+    <view class='paytab-tr'>
+      <view class='tabth-td'>2019.3.18</view>
+      <view class='tabth-td'>2018.11-2018.12</view>
+      <view class='tabth-td'>￥30.00</view>
+    </view>
+  </view>
+</view>

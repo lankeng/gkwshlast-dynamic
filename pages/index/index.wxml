@@ -1,0 +1,262 @@
+<!-- <view class='index'>
+  <swiper indicator-dots="true" autoplay="true" interval="3000" duration="500" circular="true" indicator-active-color="#8CDFF9" class='index-swiper'>
+    <block wx:for="{{imgUrls}}" wx:key="item">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='index-tab'>
+    <view class='intab-row'>
+      <view class='tabrow-con' bindtap='toproperty'>
+        <view class='tabrow-top'>
+          <view class='rowcon-img'>
+            <image src='/image/manageservice.png' class='allimg'></image>
+          </view>
+        </view>
+        <view class='rowcon-text'>
+          物业报修
+        </view>
+      </view>
+      <view class='tabrow-con' bindtap='toit'>
+        <view class='tabrow-top'>
+          <view class='rowcon-imga'>
+            <image src='/image/broadband.png' class='allimg'></image>
+          </view>
+        </view>
+        <view class='rowcon-text'>
+          宽带报修
+        </view>
+      </view>
+      <view class='tabrow-con' bindtap='tograde'>
+        <view class='tabrow-top'>
+          <view class='rowcon-imgb'>
+            <image src='/image/grade.png' class='allimg'></image>
+          </view>
+        </view>
+        <view class='rowcon-text'>
+          查询成绩
+        </view>
+      </view>
+    </view>
+    <view class='intab-row'>
+      <view class='tabrow-con' bindtap='toclass'>
+        <view class='tabrow-top'>
+          <view class='rowcon-imgb'>
+            <image src='/image/class.png' class='allimg'></image>
+          </view>
+        </view>
+        <view class='rowcon-text'>
+          课程信息
+        </view>
+      </view>
+      <navigator class='tabrow-con' url='/pages/emptyroom/emptyroom' open-type='switchTab' hover-class="none">
+        <view class='tabrow-top'>
+          <view class='rowcon-img'>
+            <image src='/image/findroom.png' class='allimg'></image>
+          </view>
+        </view>
+        <view class='rowcon-text'>
+          空教室查询
+        </view>
+      </navigator>
+      <view class='tabrow-con' bindtap='toelewater'>
+        <view class='tabrow-top'>
+          <view class='rowcon-imgb'>
+            <image src='/image/water.png' class='allimg'></image>
+          </view>
+        </view>
+        <view class='rowcon-text'>
+          水电缴费查询
+        </view>
+      </view>
+    </view>
+    <view class='intab-row'>
+      <view class='tabrow-con' bindtap='tocourier'>
+        <view class='tabrow-top'>
+          <view class='rowcon-imgd'>
+            <image src='/image/courier.png' class='allimg'></image>
+          </view>
+        </view>
+        <view class='rowcon-text'>
+          快递查询
+        </view>
+      </view>
+      <view class='tabrow-con' bindtap='tofindbook'>
+        <view class='tabrow-top'>
+          <view class='rowcon-imgb'>
+            <image src='/image/findbook.png' class='allimg'></image>
+          </view>
+        </view>
+        <view class='rowcon-text'>
+          图书馆找书
+        </view>
+      </view>
+      <view class='tabrow-con' bindtap='toborrowinfo'>
+        <view class='tabrow-top'>
+          <view class='rowcon-imgb'>
+            <image src='/image/borrow.png' class='allimg'></image>
+          </view>
+        </view>
+        <view class='rowcon-text'>
+          借阅信息
+        </view>
+      </view>
+    </view>
+  </view>
+</view> -->
+<view class='gkindex'>
+  <swiper indicator-dots="true" autoplay="true" interval="3000" duration="500" circular="true" indicator-active-color="#0F75D1" class='index-swiper' indicator-color="#ADADAF" >
+    <block wx:for="{{imgUrls}}" wx:key="item">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='gkindex-student'>
+    <view class='gkstu-title clearfix'>
+      <view class='gktitl-radius'></view>
+      <view class='gktitl-text'>学习服务</view>
+    </view>
+    <view class='gkstu-con'>
+      <view class='stucon-tr clearfix'>
+        <view class='stucon-icontext' bindtap='tograde'>
+          <view class='incontext-icon'>
+            <image src='/image/grade.png' class='allimg'></image>
+          </view>
+          <view class='icontext-text'>
+            成绩查询
+          </view>
+        </view>
+        <view class='stucon-icontext' bindtap='toclass'>
+          <view class='incontext-icon'>
+            <image src='/image/class.png' class='allimg'></image>
+          </view>
+          <view class='icontext-text'>
+            课程表
+          </view>
+        </view>
+        <navigator class='stucon-icontext' url='/pages/emptyroom/emptyroom' open-type='switchTab' hover-class="none">
+          <view class='incontext-icon'>
+            <image src='/image/findroom.png' class='allimg'></image>
+          </view>
+          <view class='icontext-text'>
+            空教室
+          </view>
+        </navigator>
+        <view class='stucon-icontext' bindtap='tofindbook'>
+          <view class='incontext-icon'>
+            <image src='/image/findbook.png' class='allimg'></image>
+          </view>
+          <view class='icontext-text'>
+            图书馆找书
+          </view>
+        </view>
+      </view>
+      <view class='stucon-tra clearfix'>
+        <view class='stucon-icontext' bindtap='toborrowinfo'>
+          <view class='incontext-icon'>
+            <image src='/image/borrow.png' class='allimg'></image>
+          </view>
+          <view class='icontext-text'>
+            借阅信息
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='gkindex-live'>
+    <view class='gkstu-title clearfix'>
+      <view class='gktitl-radius'></view>
+      <view class='gktitl-text'>生活服务</view>
+    </view>
+    <view class='gkstu-con'>
+      <view class='stucon-tr clearfix'>
+        <view class='stucon-icontext' bindtap='toproperty'>
+          <view class='incontext-icon'>
+            <image src='/image/manageservice.png' class='allimg'></image>
+          </view>
+          <view class='icontext-text'>
+            物业报修
+          </view>
+        </view>
+        <view class='stucon-icontext' bindtap='toit'>
+          <view class='incontext-icon'>
+            <image src='/image/broadband.png' class='allimg'></image>
+          </view>
+          <view class='icontext-text'>
+            宽带报修
+          </view>
+        </view>
+        <view class='stucon-icontext' bindtap='toelewater'>
+          <view class='incontext-icon'>
+            <image src='/image/water.png' class='allimg'></image>
+          </view>
+          <view class='icontext-text'>
+            水电缴费
+          </view>
+        </view>
+        <view class='stucon-icontext' bindtap='tocourier'>
+          <view class='incontext-icon'>
+            <image src='/image/courier.png' class='allimg'></image>
+          </view>
+          <view class='icontext-text'>
+            快递查询
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='gkindex-live'>
+    <view class='gkstu-title clearfix'>
+      <view class='gktitl-radius'></view>
+      <view class='gktitl-text'>缴费服务</view>
+    </view>
+    <view class='gkstu-con'>
+      <view class='stucon-tr clearfix'>
+        <view class='stucon-icontext' bindtap='topaymoney'>
+          <view class='incontext-icon'>
+            <image src='/image/stuidcard.png' class='allimg'></image>
+          </view>
+          <view class='icontext-text'>
+            学生证补办
+          </view>
+        </view>
+        <view class='stucon-icontext'>
+          <view class='incontext-icon'>
+            <image src='/image/calligraphy.png' class='allimg'></image>
+          </view>
+          <view class='icontext-text'>
+            素拓本补办
+          </view>
+        </view>
+        <view class='stucon-icontext'>
+          <view class='incontext-icon'>
+            <image src='/image/graduation.png' class='allimg'></image>
+          </view>
+          <view class='icontext-text'>
+            毕业证补办
+          </view>
+        </view>
+        <view class='stucon-icontext'>
+          <view class='incontext-icon'>
+            <image src='/image/dues.png' class='allimg'></image>
+          </view>
+          <view class='icontext-text'>
+            党费
+          </view>
+        </view>
+      </view>
+      <view class='stucon-tra clearfix'>
+        <view class='stucon-icontext'>
+          <view class='incontext-icon'>
+            <image src='/image/activists.png' class='allimg'></image>
+          </view>
+          <view class='icontext-text'>
+            入党积极分子
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

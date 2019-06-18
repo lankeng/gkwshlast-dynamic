@@ -1,0 +1,102 @@
+<view class='prodetail'>
+  <view class='pd-con'>
+    <view class='pdcon-titlea'>
+      损坏照片：
+    </view>
+    <view class='padcon-badpic'>
+      <image src='{{alldata.imgs}}' class='allimg' data-src='{{alldata.imgs}}' bindtap='previewImg'></image>
+    </view>
+  </view>
+  <view class='pd-con'>
+    <view class='pdcon-title'>
+      情况描述：
+    </view>
+    <view class='pdcon-text'>
+      {{alldata.situation}}
+    </view>
+  </view>
+  <view class='pd-con'>
+    <view class='pdcon-title'>
+      状态：
+    </view>
+    <view class='pdcon-text'>
+      {{alldata.serviceStatus}}
+    </view>
+  </view>
+  <view class='pd-con'>
+    <view class='pdcon-title'>
+      申请维修时间：
+    </view>
+    <view class='pdcon-text'>
+      {{alldata.applicationTime}}
+    </view>
+  </view>
+  <view class='pd-con'>
+    <view class='pdcon-title'>
+      要求维修时间：
+    </view>
+    <view class='pdcon-text'>
+      {{alldata.requireServiceTime}}
+    </view>
+  </view>
+  <view class='pd-con'>
+    <view class='pdcon-title'>
+      区苑：
+    </view>
+    <view class='pdcon-text'>
+      {{alldata.buildingNAME}}
+    </view>
+  </view>
+  <view class='pd-con'>
+    <view class='pdcon-title'>
+      宿舍编号：
+    </view>
+    <view class='pdcon-text'>
+      {{alldata.dormitoryID}}
+    </view>
+  </view>
+  <view class='pd-con'>
+    <view class='pdcon-title'>
+      申请人：
+    </view>
+    <view class='pdcon-text'>
+      {{alldata.applicationPeopleName}}
+    </view>
+  </view>
+  <view class='pd-con'>
+    <view class='pdcon-title'>
+      联系电话：
+    </view>
+    <view class='pdcon-text'>
+      {{alldata.phone}}
+    </view>
+  </view>
+  <view wx:if="{{alldata.serviceStatus == '已评价'}}">
+    <view class='pd-con'>
+      <view class='pdcon-title'>
+        服务态度：
+      </view>
+      <view class='pdcon-text'>
+        {{alldata.serviceAttitude}}
+      </view>
+    </view>
+    <view class='pd-con'>
+      <view class='pdcon-title'>
+        服务质量：
+      </view>
+      <view class='pdcon-text'>
+        {{alldata.serviceQuality}}
+      </view>
+    </view>
+    <view class='pd-con'>
+      <view class='pdcon-title'>
+        意见或建议(评语)：
+      </view>
+      <view class='pdcon-text'>
+        {{alldata.suggestionOrSuggest}}
+      </view>
+    </view>
+    <view class='pd-cona'>
+    </view>
+  </view>
+</view>

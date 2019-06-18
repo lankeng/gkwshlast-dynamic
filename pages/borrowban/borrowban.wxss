@@ -1,0 +1,184 @@
+/* pages/borrowban/borrowban.wxss */
+
+page {
+  background-color: #004CA0;
+  width: 100%;
+  height: 100%;
+}
+
+.borrowban {
+  width: 100%;
+}
+
+.borrowban-logo {
+  width: 272rpx;
+  height: 272rpx;
+  margin: auto;
+  margin-top: 80rpx;
+}
+
+.borrowban-ipt {
+  width: 90%;
+  height: 80rpx;
+  background-color: #fff;
+  margin: auto;
+  margin-top: 120rpx;
+  display: block;
+  border-radius: 6rpx;
+}
+
+.borrowban-ipta {
+  width: 90%;
+  height: 80rpx;
+  background-color: #fff;
+  margin: auto;
+  margin-top: 50rpx;
+  display: block;
+  border-radius: 6rpx;
+}
+
+.boript-left {
+  width: 36%;
+  height: 80rpx;
+  display: inline-block;
+  line-height: 80rpx;
+  font-size: 35rpx;
+  color: #4d4d4d;
+  text-align: center;
+}
+
+.boript-mid {
+  width: 1%;
+  font-size: 30rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  display: inline-block;
+  color: #dadada;
+}
+
+.boript-right {
+  width: 60%;
+  height: 100%;
+  display: inline-block;
+  padding-left: 3%;
+  font-size: 35rpx;
+}
+
+.boript-place {
+  font-size: 35rpx;
+  color: #dadada;
+}
+
+.borrowban-help {
+  width: 90%;
+  margin: auto;
+  display: block;
+  text-align: right;
+  margin-top: 30rpx;
+}
+
+.borhelp-img {
+  width: 30rpx;
+  height: 30rpx;
+  display: inline-block;
+  position: relative;
+  top: 5rpx;
+}
+
+.borhelp-text {
+  font-size: 30rpx;
+  color: #8fbf1c;
+  display: inline-block;
+  margin-right: 10rpx;
+}
+
+.zzhao {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
+  top: 0;
+  z-index: 10;
+  transition: 1s;
+  display: none;
+}
+
+.zzhaoa {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
+  top: 0;
+  z-index: 10;
+  transition: 1s;
+  opacity: 0;
+}
+
+.help {
+  width: 80%;
+  height: 320rpx;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 15rpx;
+  position: relative;
+  top: 450rpx;
+}
+
+.help-title {
+  width: 100%;
+  height: 80rpx;
+  border-bottom: 2rpx solid #ececec;
+  display: block;
+  position: relative;
+}
+
+.htitle-text {
+  font-size: 35rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #666;
+  display: inline-block;
+  position: absolute;
+  left: 260rpx;
+}
+
+.htitle-image {
+  width: 35rpx;
+  height: 35rpx;
+  line-height: 80rpx;
+  display: inline-block;
+  position: absolute;
+  right: 15rpx;
+}
+
+.help-con {
+  width: 85%;
+  margin: auto;
+  font-size: 28rpx;
+  padding-top: 20rpx;
+}
+
+.helpcon-title {
+  color: #b2b2b2;
+  margin-bottom: 10rpx;
+}
+
+.helpcon-content {
+  color: #5d5d5d;
+  margin-top: 5rpx;
+  padding-left: 30rpx;
+}
+
+.borrowban-btn {
+  width: 90%;
+  margin: auto;
+}
+
+.borbtn-self {
+  width: 100%;
+  border-radius: 10rpx;
+  background-color: #fff;
+  border: 2rpx solid b #666;
+  box-shadow: 3rpx 6rpx 20rpx #666;
+  margin-top: 120rpx;
+}

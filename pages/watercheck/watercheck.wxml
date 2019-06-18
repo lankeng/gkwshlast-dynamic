@@ -1,0 +1,131 @@
+<view class='watercheck' wx:if="{{login == true}}">
+  <swiper indicator-dots="true" class='watercheck-one'>
+    <block>
+      <swiper-item>
+        <view class='watercheck-title'>
+          上月度水费缴费状况
+        </view>
+        <view class='watercheck-content'>
+          <view class='watercon-item clearfix'>
+            <view class='wateritem-title'>区苑：</view>
+            <view class='wateritem-text'>{{yuanqu}}</view>
+          </view>
+          <view class='watercon-item clearfix'>
+            <view class='wateritem-title'>宿舍楼号：</view>
+            <view class='wateritem-text'>{{floor}}</view>
+          </view>
+          <view class='watercon-item clearfix'>
+            <view class='wateritem-title'>水费开始日期：</view>
+            <view class='wateritem-text'>{{starttime}}</view>
+          </view>
+          <view class='watercon-item clearfix'>
+            <view class='wateritem-title'>水费截至日期：</view>
+            <view class='wateritem-text'>{{endtime}}</view>
+          </view>
+          <view class='watercon-item clearfix'>
+            <view class='wateritem-title'>本月度数（总表）：</view>
+            <view class='wateritem-text'>{{byds}}</view>
+          </view>
+          <view class='watercon-item clearfix'>
+            <view class='wateritem-title'>本月实际使用度数：</view>
+            <view class='wateritem-text'>{{bysjyd}}</view>
+          </view>
+          <view class='watercon-item clearfix'>
+            <view class='wateritem-title'>超额度数：</view>
+            <view class='wateritem-text'>{{ceds}}</view>
+          </view>
+          <view class='watercon-item clearfix'>
+            <view class='wateritem-title'>需要缴费金额：</view>
+            <view class='wateritem-text'>{{needtopay}}</view>
+          </view>
+          <view class='watercon-item clearfix'>
+            <view class='wateritem-title'>每月赠送度数：</view>
+            <view class='wateritem-text'>{{free}}</view>
+          </view>
+          <view class='watercon-item clearfix'>
+            <view class='wateritem-title'>支付状态：</view>
+            <view class='wateritem-text'>{{paystatus}}</view>
+          </view>
+          <view class='watercon-item clearfix'>
+            <view class='wateritem-title'>支付人学号：</view>
+            <view class='wateritem-text'>{{payxh}}</view>
+          </view>
+          <view class='watercon-item clearfix'>
+            <view class='wateritem-title'>支付人姓名：</view>
+            <view class='wateritem-text'>{{payxm}}</view>
+          </view>
+          <view class='watercon-item clearfix'>
+            <view class='wateritem-title'>支付时间：</view>
+            <view class='wateritem-text'>{{paytime}}</view>
+          </view>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view class='watercheck-title'>
+          上月度电费费缴费状况
+        </view>
+        <view class='watercheck-content'>
+          <view class='watercon-item clearfix'>
+            <view class='wateritem-title'>区苑：</view>
+            <view class='wateritem-text'></view>
+          </view>
+          <view class='watercon-item clearfix'>
+            <view class='wateritem-title'>宿舍楼号：</view>
+            <view class='wateritem-text'></view>
+          </view>
+          <view class='watercon-item clearfix'>
+            <view class='wateritem-title'>水费开始日期：</view>
+            <view class='wateritem-text'></view>
+          </view>
+          <view class='watercon-item clearfix'>
+            <view class='wateritem-title'>水费截至日期：</view>
+            <view class='wateritem-text'></view>
+          </view>
+          <view class='watercon-item clearfix'>
+            <view class='wateritem-title'>本月度数（总表）：</view>
+            <view class='wateritem-text'></view>
+          </view>
+          <view class='watercon-item clearfix'>
+            <view class='wateritem-title'>本月实际使用度数：</view>
+            <view class='wateritem-text'></view>
+          </view>
+          <view class='watercon-item clearfix'>
+            <view class='wateritem-title'>超额度数：</view>
+            <view class='wateritem-text'></view>
+          </view>
+          <view class='watercon-item clearfix'>
+            <view class='wateritem-title'>需要缴费金额：</view>
+            <view class='wateritem-text'></view>
+          </view>
+          <view class='watercon-item clearfix'>
+            <view class='wateritem-title'>每月赠送度数：</view>
+            <view class='wateritem-text'></view>
+          </view>
+          <view class='watercon-item clearfix'>
+            <view class='wateritem-title'>支付状态：</view>
+            <view class='wateritem-text'></view>
+          </view>
+          <view class='watercon-item clearfix'>
+            <view class='wateritem-title'>支付人学号：</view>
+            <view class='wateritem-text'></view>
+          </view>
+          <view class='watercon-item clearfix'>
+            <view class='wateritem-title'>支付人姓名：</view>
+            <view class='wateritem-text'></view>
+          </view>
+          <view class='watercon-item clearfix'>
+            <view class='wateritem-title'>支付时间：</view>
+            <view class='wateritem-text'></view>
+          </view>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class='nologin' wx:else>
+  <view class='nologin-img'>
+    <image src='/image/tologin.png' class='allimg'></image>
+  </view>
+  <view class='nologin-text'>Ooops！您需要登陆哦( T﹏T )</view>
+  <view class='nologin-tologin' bindtap='notologin'>登陆</view>
+</view>

@@ -1,0 +1,246 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false,
+		"checkSiteMap": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.7.1",
+	"appid": "wxbddd7a02303d6e58",
+	"projectname": "gkwsh",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 29,
+			"list": [
+				{
+					"id": -1,
+					"name": "物业报修",
+					"pathName": "pages/property/property",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "物业报修详情",
+					"pathName": "pages/prodetail/prodetail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "物业报修申请",
+					"pathName": "pages/proapply/proapply",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "test",
+					"pathName": "pages/test/test",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "宽带报修",
+					"pathName": "pages/itservice/itservice",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "宽带报修申请",
+					"pathName": "pages/itsapply/itsapply",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "宽带报修详情",
+					"pathName": "pages/itdetail/itdetail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "成绩查询",
+					"pathName": "pages/grade/grade",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "课表",
+					"pathName": "pages/schedule/schedule",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "空教室",
+					"pathName": "pages/emptyroom/emptyroom",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "图书馆找书",
+					"pathName": "pages/findbook/findbook",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "图书搜索结果",
+					"pathName": "pages/showbook/showbook",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "书籍详情",
+					"pathName": "pages/bookdetail/bookdetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "快递查询",
+					"pathName": "pages/courier/courier",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "水电缴费",
+					"pathName": "pages/elewater/elewater",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "历史缴费记录",
+					"pathName": "pages/payrecord/payrecord",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/my/my",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "账号绑定",
+					"pathName": "pages/loginban/loginban",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "评价",
+					"pathName": "pages/comments/comments",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "暂未查到物流",
+					"pathName": "pages/lists/lists",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "快递公司",
+					"pathName": "pages/company/company",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "图书证绑定",
+					"pathName": "pages/borrowban/borrowban",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "借阅信息",
+					"pathName": "pages/borrowinfo/borrowinfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "课程详细",
+					"pathName": "pages/classdetail/classdetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "宿舍绑定",
+					"pathName": "pages/roomban/roomban",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "水电缴费查询",
+					"pathName": "pages/watercheck/watercheck",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "支付页面",
+					"pathName": "pages/paymoney/paymoney",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "支付成功",
+					"pathName": "pages/paysuccess/paysuccess",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "缴费记录",
+					"pathName": "pages/costrecord/costrecord",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "缴费详情",
+					"pathName": "pages/paydetail/paydetail",
+					"scene": null
+				}
+			]
+		}
+	}
+}

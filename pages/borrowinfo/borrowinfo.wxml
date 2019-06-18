@@ -1,0 +1,207 @@
+<view>
+  <scroll-view scroll-x="true" class=" borrowinfo-sel" scroll-left="{{scrollLeft}}">
+    <!-- <view class="tab-item {{currentTab==0?'active':''}}"  data-current="0" bindtap="swichNav">健康</view>
+        <view class="tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="swichNav">情感</view>
+        <view class="tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="swichNav">职场</view>
+        <view class="tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="swichNav">育儿</view>
+        <view class="tab-item {{currentTab==4?'active':''}}" data-current="4" bindtap="swichNav">纠纷</view>
+        <view class="tab-item {{currentTab==5?'active':''}}" data-current="5" bindtap="swichNav">青葱</view>
+        <view class="tab-item {{currentTab==6?'active':''}}" data-current="6" bindtap="swichNav">全部</view>
+        <view class="tab-item {{currentTab==7?'active':''}}" data-current="7" bindtap="swichNav">其他</view> -->
+    <view class="borsel-con {{currentTab=='0'?'borsel-con-beset':''}}" data-current='0' catchtap='swichNav'>当前借阅</view>
+    <view class="borsel-con {{currentTab=='1'?'borsel-con-beset':''}}" data-current='1' catchtap='swichNav'>历史借阅</view>
+  </scroll-view>
+  <swiper current="{{currentTab}}" duration="300" bindchange="switchTab" style="height:{{winHeight+90}}rpx">
+    <swiper-item>
+      <scroll-view scroll-y="true" class="scoll-h">
+        <view class='borrowinfo-cona'>
+          <view class='borcona-basicinfo'>
+            <view class='bascinfo-options'>
+              <view class='options-text'>姓名</view>
+              <view class='options-data'>蓝铿</view>
+            </view>
+            <view class='bascinfo-options'>
+              <view class='options-text'>当前借阅</view>
+              <view class='options-datanum'>
+                <text class='options-dataa'>0</text>
+                <text class='options-ben'>本</text>
+              </view>
+            </view>
+            <view class='bascinfo-options'>
+              <view class='options-text'>欠费</view>
+              <view class='options-datanum'>
+                <text class='options-dataa'>0</text>
+                <text class='options-ben'>元</text>
+              </view>
+            </view>
+          </view>
+          <view class='borcona-main'>
+            <view class='borcon-show' wx:if="{{datashow != ''}}">
+              <view class='borcona-content'>
+                <view class='content-self'>
+                  <view class='content-title'>UI设计UI设计UI设计UI设计UI设计UI设计UI设计UI设计</view>
+                  <view class='content-data'>
+                    <view class='condata-line'>
+                      <view class='datalin-tab'>图书条码：08D070743</view>
+                      <view class='datalin-tab'>流通状态：</view>
+                    </view>
+                    <view class='condata-line'>
+                      <view class='datalin-tab'>收藏部门：</view>
+                      <view class='datalin-tab'>应还日期：2019-12-12</view>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <view class='borcona-content'>
+                <view class='content-self'>
+                  <view class='content-title'>UI设计UI设计UI设计UI设计UI设计UI设计UI设计UI设计</view>
+                  <view class='content-data'>
+                    <view class='condata-line'>
+                      <view class='datalin-tab'>图书条码：08D070743</view>
+                      <view class='datalin-tab'>流通状态：</view>
+                    </view>
+                    <view class='condata-line'>
+                      <view class='datalin-tab'>收藏部门：</view>
+                      <view class='datalin-tab'>应还日期：2019-12-12</view>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <view class='borcona-content'>
+                <view class='content-self'>
+                  <view class='content-title'>UI设计UI设计UI设计UI设计UI设计UI设计UI设计UI设计</view>
+                  <view class='content-data'>
+                    <view class='condata-line'>
+                      <view class='datalin-tab'>图书条码：08D070743</view>
+                      <view class='datalin-tab'>流通状态：</view>
+                    </view>
+                    <view class='condata-line'>
+                      <view class='datalin-tab'>收藏部门：</view>
+                      <view class='datalin-tab'>应还日期：2019-12-12</view>
+                    </view>
+                  </view>
+                </view>
+              </view>
+            </view>
+            <view class='borcon-noresult' wx:else>
+              <view class='noresult-img'>
+                <image src='/image/noborrow.png' class='allimg'></image>
+              </view>
+              <view class='noresult-text'>当前无借阅</view>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+    <swiper-item>
+      <scroll-view scroll-y="true" class="scoll-h">
+        <view class='borrowinfo-cona'>
+          <view class='borcona-basicinfo'>
+            <view class='bascinfo-options'>
+              <view class='options-text'>姓名</view>
+              <view class='options-data'>蓝铿</view>
+            </view>
+            <view class='bascinfo-options'>
+              <view class='options-text'>历史借阅</view>
+              <view class='options-datanum'>
+                <text class='options-dataa'>21</text>
+                <text class='options-ben'>本</text>
+              </view>
+            </view>
+            <view class='bascinfo-options'>
+              <view class='options-text'>欠费</view>
+              <view class='options-datanum'>
+                <text class='options-dataa'>0</text>
+                <text class='options-ben'>元</text>
+              </view>
+            </view>
+          </view>
+          <view class='borcona-main'>
+            <view class='borcon-show' wx:if="{{history != ''}}">
+              <view class='borcona-content'>
+                <view class='content-self'>
+                  <view class='content-title'>UI设计UI设计UI设计UI设计UI设计UI设计UI设计UI设计</view>
+                  <view class='content-data'>
+                    <view class='condata-line'>
+                      <view class='datalin-taba'>图书条码：08D070743</view>
+                    </view>
+                    <view class='condata-line'>
+                      <view class='datalin-tab'>操作类型：还书</view>
+                      <view class='datalin-tab'>操作日期：2019-12-12</view>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <view class='borcona-content'>
+                <view class='content-self'>
+                  <view class='content-title'>UI设计UI设计UI设计UI设计UI设计UI设计UI设计UI设计</view>
+                  <view class='content-data'>
+                    <view class='condata-line'>
+                      <view class='datalin-taba'>图书条码：08D070743</view>
+                      <view class='datalin-tab'>流通状态：</view>
+                    </view>
+                    <view class='condata-line'>
+                      <view class='datalin-tab'>收藏部门：</view>
+                      <view class='datalin-tab'>应还日期：2019-12-12</view>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <view class='borcona-content'>
+                <view class='content-self'>
+                  <view class='content-title'>UI设计UI设计UI设计UI设计UI设计UI设计UI设计UI设计</view>
+                  <view class='content-data'>
+                    <view class='condata-line'>
+                      <view class='datalin-taba'>图书条码：08D070743</view>
+                      <view class='datalin-tab'>流通状态：</view>
+                    </view>
+                    <view class='condata-line'>
+                      <view class='datalin-tab'>收藏部门：</view>
+                      <view class='datalin-tab'>应还日期：2019-12-12</view>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <view class='borcona-content'>
+                <view class='content-self'>
+                  <view class='content-title'>UI设计UI设计UI设计UI设计UI设计UI设计UI设计UI设计</view>
+                  <view class='content-data'>
+                    <view class='condata-line'>
+                      <view class='datalin-taba'>图书条码：08D070743</view>
+                      <view class='datalin-tab'>流通状态：</view>
+                    </view>
+                    <view class='condata-line'>
+                      <view class='datalin-tab'>收藏部门：</view>
+                      <view class='datalin-tab'>应还日期：2019-12-12</view>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <view class='borcona-content'>
+                <view class='content-self'>
+                  <view class='content-title'>UI设计UI设计UI设计UI设计UI设计UI设计UI设计UI设计</view>
+                  <view class='content-data'>
+                    <view class='condata-line'>
+                      <view class='datalin-taba'>图书条码：08D070743</view>
+                      <view class='datalin-tab'>流通状态：</view>
+                    </view>
+                    <view class='condata-line'>
+                      <view class='datalin-tab'>收藏部门：</view>
+                      <view class='datalin-tab'>应还日期：2019-12-12</view>
+                    </view>
+                  </view>
+                </view>
+              </view>
+            </view>
+            <view class='borcon-noresult' wx:else>
+              <view class='noresult-img'>
+                <image src='/image/noborrow.png' class='allimg'></image>
+              </view>
+              <view class='noresult-text'>当前无借阅</view>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+  </swiper>
+</view>

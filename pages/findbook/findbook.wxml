@@ -1,0 +1,45 @@
+<view class='findbook'>
+  <view class='fb-logo'>
+    <image src="/image/booklogo.png" class='allimg'></image>
+  </view>
+  <view class='fb-search'>
+    <view class='search-imgall'>
+      <view class='search-img'>
+        <image src='/image/search.png' class='allimg'></image>
+      </view>
+    </view>
+    <input type='text' class='search-ipt' placeholder='题名/作者/主题词' placeholder-class='placeholdercla' bindinput='getvalue' value='{{iptvalue}}'></input>
+    <view class='search-close' bindtap='toclear'>
+      <view class="sclo-img {{showclose == false?'sclo-imga':''}}">
+        <image src='/image/close.png' class='allimg'></image>
+      </view>
+    </view>
+    <button class='search-btn' bindtap='tosearch'>
+      搜索
+    </button>
+  </view>
+  <view class='fb-warn'>
+    <view class='warn-title'>图书馆开放时间</view>
+    <view class='warn-text'>
+      <text>周一至周四</text>
+      <text class='wate-time'>10:00-12:00</text>
+      <text class='wate-timeb'>14:40-21:00</text>
+    </view>
+    <view class='warn-text'>
+      <text decode="{{true}}">周&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;五</text>
+      <text class='wate-time'>10:00-12:00</text>
+      <text class='wate-timeb'>14:40-17:40</text>
+    </view>
+    <view class='warn-text'>
+      <text decode="{{true}}">周六、周日</text>
+      <text class='wate-time'>09:00-12:00</text>
+      <text class='wate-timeb'>14:40-21:00</text>
+    </view>
+    <view class='warn-text'>
+      自习室开放时间为每天8:00-23:00
+    </view>
+    <view class='warn-text'>
+      寒暑假、法定节假日不开放！
+    </view>
+  </view>
+</view>

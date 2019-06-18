@@ -1,0 +1,140 @@
+<view class='schedule' wx:if="{{login == true}}">
+  <view class='schedule-sela'>
+    <view class='sel-weeka'>
+      <picker bindchange="bindPickerChangea" value="{{indexyear}}" range="{{arrayyear}}">
+        <view class="sel-picker">
+          {{arrayyear[indexyear]}}
+        </view>
+        <view class='sel-down'></view>
+      </picker>
+    </view>
+  </view>
+  <view class='schedule-week'>
+    <view class='sweek-tab'>
+      <view class='swtab-text'>
+        时间/星期
+      </view>
+      <!-- <view class='swtab-text'>月</view> -->
+    </view>
+    <view class='sweek-tab'>
+      <view class="swtab-text {{nowdayweek == '周一'?'swtab-nowday':''}}">周一</view>
+      <!-- <view class='swtab-text'>11日</view> -->
+    </view>
+    <view class='sweek-tab'>
+      <view class="swtab-text {{nowdayweek == '周二'?'swtab-nowday':''}}">周二</view>
+      <!-- <view class='swtab-text'>11日</view> -->
+    </view>
+    <view class='sweek-tab'>
+      <view class="swtab-text {{nowdayweek == '周三'?'swtab-nowday':''}}">周三</view>
+      <!-- <view class='swtab-text'>11日</view> -->
+    </view>
+    <view class='sweek-tab'>
+      <view class="swtab-text {{nowdayweek == '周四'?'swtab-nowday':''}}">周四</view>
+      <!-- <view class='swtab-text'>11日</view> -->
+    </view>
+    <view class='sweek-tab'>
+      <view class="swtab-text {{nowdayweek == '周五'?'swtab-nowday':''}}">周五</view>
+      <!-- <view class='swtab-text'>11日</view> -->
+    </view>
+  </view>
+  <view class="schedule-row">
+    <view class="scrow-tab">
+      <view class='sctab-time'>08:30</view>
+      <view class='sctab-time'>|</view>
+      <view class='sctab-time'>10:05</view>
+    </view>
+    <view class="scrow-tab {{item.couname == ''?'scrow-tabno':''}}" wx:for="{{course[0].link}}" wx:key="item" wx:for-index="key" style="background-color:{{randomColorArr[item.ran]}}" data-item="{{item}}" bindtap='toclassdetail'>
+      <view class='sctab-course'>{{item.couname}}</view>
+      <view class='sctab-name'>{{item.techer}}</view>
+      <view class='sctab-name'>{{item.room}}</view>
+      <view class=''>{{item.all.DSZ}}</view>
+    </view>
+  </view>
+  <view class='schedule-row'>
+    <view class='scrow-tab'>
+      <view class='sctab-time'>10:25</view>
+      <view class='sctab-time'>|</view>
+      <view class='sctab-time'>12:00</view>
+    </view>
+    <view class="scrow-tab {{item.couname == ''?'scrow-tabno':''}}" wx:for="{{course[1].link}}" wx:key="item" wx:for-index="key" style="background-color:{{randomColorArr[item.ran]}}" data-item="{{item}}" bindtap='toclassdetail'>
+      <view class='sctab-course'>{{item.couname}}</view>
+      <view class='sctab-name'>{{item.techer}}</view>
+      <view class='sctab-name'>{{item.room}}</view>
+      <view class=''>{{item.all.DSZ}}</view>
+    </view>
+  </view>
+  <view class='schedule-row'>
+    <view class='scrow-tab'>
+      <view class='sctab-time'>14:40</view>
+      <view class='sctab-time'>|</view>
+      <view class='sctab-time'>16:15</view>
+    </view>
+    <view class="scrow-tab {{item.couname == ''?'scrow-tabno':''}}" wx:for="{{course[2].link}}" wx:key="item" wx:for-index="key" style="background-color:{{randomColorArr[item.ran]}}" data-item="{{item}}" bindtap='toclassdetail'>
+      <view class='sctab-course'>{{item.couname}}</view>
+      <view class='sctab-name'>{{item.techer}}</view>
+      <view class='sctab-name'>{{item.room}}</view>
+      <view class=''>{{item.all.DSZ}}</view>
+    </view>
+  </view>
+  <view class='schedule-row'>
+    <view class='scrow-tab'>
+      <view class='sctab-time'>16:30</view>
+      <view class='sctab-time'>|</view>
+      <view class='sctab-time'>18:05</view>
+    </view>
+    <view class="scrow-tab {{item.couname == ''?'scrow-tabno':''}}" wx:for="{{course[3].link}}" wx:key="item" wx:for-index="key" style="background-color:{{randomColorArr[item.ran]}}" data-item="{{item}}" bindtap='toclassdetail'>
+      <view class='sctab-course'>{{item.couname}}</view>
+      <view class='sctab-name'>{{item.techer}}</view>
+      <view class='sctab-name'>{{item.room}}</view>
+      <view class=''>{{item.all.DSZ}}</view>
+    </view>
+  </view>
+  <view class='schedule-row'>
+    <view class='scrow-tab'>
+      <view class='sctab-time'>19:30</view>
+      <view class='sctab-time'>|</view>
+      <view class='sctab-time'>21:05</view>
+    </view>
+    <view class="scrow-tab {{item.couname == ''?'scrow-tabno':''}}" wx:for="{{course[4].link}}" wx:key="item" wx:for-index="key" style="background-color:{{randomColorArr[item.ran]}}" data-item="{{item}}" bindtap='toclassdetail'>
+      <view class='sctab-course'>{{item.couname}}</view>
+      <view class='sctab-name'>{{item.techer}}</view>
+      <view class='sctab-name'>{{item.room}}</view>
+      <view class=''>{{item.all.DSZ}}</view>
+    </view>
+  </view>
+    <!-- <view class='schedule-sela'>
+      <view class='sel-weeka'>
+        <picker bindchange="bindPickerChangea" value="{{indexyear}}" range="{{arrayyear}}">
+          <view class="sel-picker">
+            {{arrayyear[indexyear]}}
+          </view>
+          <view class='sel-down'></view>
+        </picker>
+      </view>
+    </view> -->
+    <view class='lefttoweek' catchtap='beforeweek'>
+      <image src='/image/lefttoweek.png' class='allimg'></image>
+    </view>
+    <view class='schedule-sel'>
+      <view class='sel-week'>
+        <picker bindchange="bindPickerChange" value="{{week}}" range="{{array}}">
+          <view class="sel-picker">
+            {{array[week]}}
+          </view>
+          <!-- <view class='sel-down'></view> -->
+        </picker>
+      </view>
+    </view>
+    <view class='rigtoweek' catchtap='nexttoweek' >
+      <image src='/image/rigtoweek.png' class='allimg'></image>
+    </view>
+
+  <picker class='schedule-btn' bindchange="bindPickerChangeb" value="{{nowweek}}" range="{{nowarray}}">点击设置当前周数</picker>
+</view>
+<view class='nologin' wx:else>
+  <view class='nologin-img'>
+    <image src='/image/tologin.png' class='allimg'></image>
+  </view>
+  <view class='nologin-text'>Ooops！您需要登陆哦( T﹏T )</view>
+  <view class='nologin-tologin' bindtap='notologin'>登陆</view>
+</view>

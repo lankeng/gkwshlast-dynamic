@@ -1,0 +1,165 @@
+/* .roomban {
+  width: 100%;
+  padding-top: 100rpx;
+}
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.roomban-logo {
+  width: 200rpx;
+  height: 200rpx;
+  margin: auto;
+}
+
+.roomban-content {
+  width: 100%;
+  padding-top: 100rpx;
+}
+
+.roomcon-item {
+  width: 70%;
+  margin: auto;
+  margin-top: 18rpx;
+}
+
+.conitem-title {
+  width: 36%;
+  float: left;
+  color: #535353;
+  text-align: right;
+}
+
+.conitem-ans {
+  width: 58%;
+  float: right;
+  padding-left: 30rpx;
+  padding-bottom: 8rpx;
+}
+
+.conitem-ansa {
+  width: 58%;
+  float: right;
+  border-bottom: 2rpx solid #666;
+  padding-left: 30rpx;
+  padding-bottom: 8rpx;
+}
+
+.conitem-place {
+  font-size: 30rpx;
+}
+
+.borrowban-btn {
+  width: 90%;
+  margin: auto;
+}
+
+.borbtn-self {
+  width: 100%;
+  border-radius: 10rpx;
+  background-color: #004CA0;
+  border: 2rpx solid b #666;
+  box-shadow: 3rpx 6rpx 20rpx #666;
+  margin-top: 150rpx;
+  color: #fff;
+}
+
+.alrelogin{
+  background-color: #EB1313;
+  color: #ffffff;
+} */
+
+page {
+  background-color: #004ca0;
+}
+
+.roomban {
+  width: 100%;
+  padding-top: 40rpx;
+}
+
+.roomban-logo {
+  width: 268rpx;
+  height: 268rpx;
+  margin: auto;
+}
+
+.roomban-tr {
+  padding: 0 60rpx;
+  margin-top: 50rpx;
+}
+
+.bantr-title {
+  color: #fff;
+  font-size: 42rpx;
+  float: left;
+}
+
+.bantr-text {
+  font-size: 38rpx;
+  color: #fff;
+  float: right;
+}
+
+.roomban-tra {
+  width: 627rpx;
+  margin: auto;
+  padding: 40rpx 0rpx;
+  border-bottom: 1rpx solid #fff;
+  margin-top: 10rpx;
+}
+
+.sel-down {
+  width: 0;
+  height: 0;
+  border-width: 12rpx 12rpx 0;
+  border-style: solid;
+  border-color: #fff transparent transparent; /*灰 透明 透明 */
+  position: relative;
+  display: inline-block;
+  top: -8rpx;
+  margin-left: 20rpx;
+}
+
+.sel-picker {
+  display: inline-block;
+  position: relative;
+  top: -2rpx;
+}
+
+.bantr-ipt {
+  font-size: 38rpx;
+  color: #fff;
+  float: right;
+  text-align: right;
+}
+
+.conitem-place {
+  color: #fff;
+  font-size: 38rpx;
+  opacity: 0.5;
+}
+
+.borrowban-btn {
+  width: 679rpx;
+  margin: auto;
+  margin-top: 93rpx;
+  border: 2rpx solid b #333;
+  border-radius: 10rpx;
+  box-shadow: 6rpx 6rpx 20rpx #333;
+}
+
+.alrelogin {
+  background-color: #8fbf1c;
+  color: #fff;
+}

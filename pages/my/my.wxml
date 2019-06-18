@@ -1,0 +1,92 @@
+<view class='my'>
+  <view class='my-topbac'></view>
+  <view class='my-information'>
+    <view class='myinfo-head'>
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <view class='myinfo-name'>
+      {{name}}
+    </view>
+    <view class='myinfo-other'>
+      <view class='infother-th'>
+        <view class='otherth-title'>学号</view>
+        <view class='otherth-title'>专业</view>
+        <view class='otherth-title'>班级</view>
+      </view>
+      <view class='infother-tr'>
+        <view class='otherth-text'>{{xh}}</view>
+        <view class='otherth-text'>{{xb}}</view>
+        <view class='otherth-text'>{{bj}}</view>
+      </view>
+    </view>
+  </view>
+  <view class='my-interbac'></view>
+  <view class='my-content'>
+    <view class='mycon-loginban' bindtap='tocostrecord' wx:if="{{xh != ''}}">
+      <view class='loginban-imge'>
+        <image src='/image/paylogo.png' class='allimg'></image>
+      </view>
+      <view class='loginban-text'>
+        缴费记录
+      </view>
+      <view class='loginban-fwd'>
+        <image src='/image/forward.png' class='allimg'></image>
+      </view>
+    </view>
+    <view class='mycon-loginban' bindtap='tologinban'>
+      <view class='loginban-img'>
+        <image src='/image/userban.png' class='allimg'></image>
+      </view>
+      <view class='loginban-text'>
+        教务系统账号绑定
+      </view>
+      <view class='loginban-fwd'>
+        <image src='/image/forward.png' class='allimg'></image>
+      </view>
+    </view>
+    <view class='mycon-loginban' bindtap='toroomban'>
+      <view class='loginban-imga'>
+        <image src='/image/roomban.png' class='allimg'></image>
+      </view>
+      <view class='loginban-text'>
+        学生宿舍绑定
+      </view>
+      <view class='loginban-fwd'>
+        <image src='/image/forward.png' class='allimg'></image>
+      </view>
+    </view>
+    <view class='mycon-loginban' bindtap='toborrowban'>
+      <view class='loginban-imgb'>
+        <image src='/image/bookban.png' class='allimg'></image>
+      </view>
+      <view class='loginban-texta'>
+        改绑图书证
+      </view>
+      <view class='loginban-fwd'>
+        <image src='/image/forward.png' class='allimg'></image>
+      </view>
+    </view>
+    <view class='mycon-loginban' bindtap='tolinkpage'>
+      <view class='loginban-imgc'>
+        <image src='/image/linkme.png' class='allimg'></image>
+      </view>
+      <view class='loginban-text'>
+        联系我们
+      </view>
+      <view class='loginban-fwd'>
+        <image src='/image/forward.png' class='allimg'></image>
+      </view>
+    </view>
+    <view class='mycon-loginban' bindtap='toaboutme'>
+      <view class='loginban-imgd'>
+        <image src='/image/aboutme.png' class='allimg'></image>
+      </view>
+      <view class='loginban-text'>
+        关于我们
+      </view>
+      <view class='loginban-fwd'>
+        <image src='/image/forward.png' class='allimg'></image>
+      </view>
+    </view>
+  </view>
+</view>

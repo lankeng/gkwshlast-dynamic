@@ -1,0 +1,106 @@
+page {
+  background-color: #f2f2f2;
+}
+
+.paymoney {
+  width: 100%;
+  padding-bottom: 100rpx;
+}
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.paymoney-title {
+  padding: 40rpx;
+  color: #004ca0;
+  font-size: 40rpx;
+  border-bottom: 1rpx solid #b2b2b2;
+  background-color: #fff;
+}
+
+.paymoney-stucon {
+  padding: 40rpx;
+  background-color: #fff;
+}
+
+.stucon-tr {
+  font-size: 36rpx;
+  margin-top: 38rpx;
+}
+
+.stucon-tr:first-child {
+  font-size: 36rpx;
+  margin-top: 0;
+}
+
+.stucontr-left {
+  float: left;
+  color: #4c4c4c;
+}
+
+.stucontr-right {
+  float: right;
+  color: #4c4c4c;
+  opacity: 0.8
+}
+
+.paymoney-paycon {
+  width: 100%;
+  margin-top: 30rpx;
+  background-color: #fff;
+}
+
+.paycon-text {
+  font-size: 36rpx;
+  color: #4c4c4c;
+  padding: 40rpx;
+  opacity: 0.8
+}
+
+.paycon-allnum {
+  padding: 40rpx;
+}
+
+.allnum-text {
+  font-size: 36rpx;
+  color: #4c4c4c;
+  float: left;
+}
+
+.allnum-num {
+  font-size: 36rpx;
+  color: #4C4C4C;
+  float: right;
+}
+.allnum-status{
+  font-size: 36rpx;
+  color: #17aa16;
+  float: right;
+}
+.paymoney-btn {
+  width: 700rpx;
+  height: 88rpx;
+  background-color: #2f36dc;
+  line-height: 88rpx;
+  border-radius: 10rpx;
+  font-size: 36rpx;
+  color: #fff;
+  margin-top: 60rpx;
+}
+
+.paycon-tr{
+  margin-top: 40rpx;
+}
+.paycon-tr:first-child{
+  margin-top: 0
+}
